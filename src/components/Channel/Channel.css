@@ -1,0 +1,51 @@
+.channel {
+  display: flex;
+  align-items: center;
+  width: 70%;
+}
+.channel__info {
+  display: flex;
+}
+
+.channel__left {
+  display: flex;
+  align-items: center;
+  flex: 0.9;
+}
+
+.channel__right {
+  display: flex;
+  flex: 0.1;
+  align-items: center;
+}
+
+.channel__right > button {
+  height: 40px;
+  width: 105px;
+  padding: 10px;
+  border: none;
+  margin-right: 5px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.channel__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.channel__icon {
+  font-size: 15px !important;
+  margin-left: 5px;
+}
+
+.channel__text > h4 {
+  display: flex;
+  align-items: center;
+}
+
+.channel__image {
+  height: 120px !important;
+  width: 120px !important;
+  margin: 10px 60px;
+}

@@ -6,7 +6,7 @@ import VideoCallSharpIcon from "@material-ui/icons/VideoCallSharp";
 import AppsIcon from "@material-ui/icons/Apps";
 import NotificationsIcon from "@material-ui/icons/Notifications";
 import Avatar from "@material-ui/core/Avatar";
-import MicIcon from "@material-ui/icons/Mic";
+import { Link } from "react-router-dom";
 
 function Header() {
   const [value, setValue] = useState("");
@@ -14,11 +14,13 @@ function Header() {
     <div className="header">
       <div className="header__left">
         <MenuIcon />
-        <img
-          className="header__logo"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Logo_of_YouTube_%282015-2017%29.svg/1200px-Logo_of_YouTube_%282015-2017%29.svg.png"
-          alt=""
-        />
+        <Link to="/">
+          <img
+            className="header__logo"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Logo_of_YouTube_%282015-2017%29.svg/1200px-Logo_of_YouTube_%282015-2017%29.svg.png"
+            alt=""
+          />
+        </Link>
       </div>
 
       <div className="header__input">
@@ -28,7 +30,9 @@ function Header() {
           placeholder="Search"
           type="text"
         />
-        <SearchIcon className="header__inputButton" />
+        <Link to={`/search/${value}`}>
+          <SearchIcon className="header__inputButton" />
+        </Link>
       </div>
       <div className="header__right">
         <VideoCallSharpIcon className="header__icon" />

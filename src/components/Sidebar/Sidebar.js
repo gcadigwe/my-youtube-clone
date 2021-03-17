@@ -2,7 +2,7 @@ import React from "react";
 import "./Sidebar.css";
 import SidebarRow from "../SidebarRows/SidebarRow";
 import HomeIcon from "@material-ui/icons/Home";
-import WhatshotIcon from "@material-ui/icons/Whatshot";
+import ExploreIcon from "@material-ui/icons/Explore";
 import SubscriptionsIcon from "@material-ui/icons/Subscriptions";
 import VideoLibraryIcon from "@material-ui/icons/VideoLibrary";
 import HistoryIcon from "@material-ui/icons/History";
@@ -15,8 +15,8 @@ function Sidebar() {
   return (
     <div className="sidebar">
       <SidebarRow selected Icon={HomeIcon} title="Home" />
-      <SidebarRow Icon={WhatshotIcon} title="Trending" />
-      <SidebarRow Icon={SubscriptionsIcon} title="Subscription" />
+      <SidebarRow Icon={ExploreIcon} title="Explore" />
+      <SidebarRow Icon={SubscriptionsIcon} title="Subscriptions" />
 
       <hr />
       <SidebarRow Icon={VideoLibraryIcon} title="Library" />
